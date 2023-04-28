@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class AboutPage extends Component {
   render() {
@@ -8,8 +8,10 @@ export default class AboutPage extends Component {
           <div className="container">
             <div className="breadcrumb-content">
               <ul>
-                <li><a href="index.html">Home</a></li>
-                <li className="active">/ About Us</li>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li className="active">/ Akbout Us</li>
               </ul>
             </div>
           </div>
@@ -22,18 +24,47 @@ export default class AboutPage extends Component {
               {/* About Text Start */}
               <div className="col-lg-6 order-last order-lg-first">
                 <div className="about-text-wrap">
-                  <h2><span>Provide Best</span>Product For You</h2>
-                  <p>Introducing our online electronics store, GR2 - the go-to destination for high-quality, reliable electronic products. Our mission is to provide our customers with a seamless shopping experience, offering a wide range of top-quality electronics at competitive prices.</p>
-                  <p>At GR2, we understand the importance of reliable and trustworthy electronic devices. That's why we have partnered with some of the most reputable brands in the industry to bring you a vast selection of top-quality products.</p>
-                  <p>Our user-friendly website makes it easy for you to browse and shop for your favorite electronics, whether you're in the market for a new smartphone, laptop, camera, or gaming console. We are committed to providing our customers with fast and reliable shipping, excellent customer service, and a hassle-free return policy.</p>
-                  <p>Thank you for choosing GR2 as your trusted source for high-quality electronics. We are dedicated to providing you with the best shopping experience possible and look forward to serving you for all your electronic needs.</p>
+                  <h2>
+                    <span>Provide Best</span>Product For You
+                  </h2>
+                  <p>
+                    Introducing our online electronics store, GR2 - the go-to
+                    destination for high-quality, reliable electronic products.
+                    Our mission is to provide our customers with a seamless
+                    shopping experience, offering a wide range of top-quality
+                    electronics at competitive prices.
+                  </p>
+                  <p>
+                    At GR2, we understand the importance of reliable and
+                    trustworthy electronic devices. That's why we have partnered
+                    with some of the most reputable brands in the industry to
+                    bring you a vast selection of top-quality products.
+                  </p>
+                  <p>
+                    Our user-friendly website makes it easy for you to browse
+                    and shop for your favorite electronics, whether you're in
+                    the market for a new smartphone, laptop, camera, or gaming
+                    console. We are committed to providing our customers with
+                    fast and reliable shipping, excellent customer service, and
+                    a hassle-free return policy.
+                  </p>
+                  <p>
+                    Thank you for choosing GR2 as your trusted source for
+                    high-quality electronics. We are dedicated to providing you
+                    with the best shopping experience possible and look forward
+                    to serving you for all your electronic needs.
+                  </p>
                 </div>
               </div>
               {/* About Text End */}
               {/* About Image Start */}
               <div className="col-lg-5 col-md-10">
                 <div className="about-image-wrap">
-                  <img className="img-full" src="https://bizweb.dktcdn.net/100/329/122/files/gp66-kv-bg.jpg?v=1635149877286" alt="About Us" />
+                  <img
+                    className="img-full"
+                    src="https://bizweb.dktcdn.net/100/329/122/files/gp66-kv-bg.jpg?v=1635149877286"
+                    alt="About Us"
+                  />
                 </div>
               </div>
               {/* About Image End */}
@@ -120,9 +151,7 @@ export default class AboutPage extends Component {
         </div>
         {/* Counterup Area End Here */}
         {/* team area wrapper start */}
-
       </div>
-
-    )
+    );
   }
 }

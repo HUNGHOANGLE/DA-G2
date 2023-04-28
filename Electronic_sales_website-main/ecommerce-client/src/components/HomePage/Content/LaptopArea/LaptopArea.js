@@ -1,21 +1,20 @@
-import React, { Component } from 'react'
-import LaptopItems from './LaptopItems'
-import {connect} from 'react-redux'
-import { actFetchProductsLaptopRequest } from '../../../../redux/actions/products';
+import React, { Component } from "react";
+import LaptopItems from "./LaptopItems";
+import { connect } from "react-redux";
+import { actFetchProductsLaptopRequest } from "../../../../redux/actions/products";
 
 class LaptopArea extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      offset: 0
-    }
+      offset: 0,
+    };
   }
 
   componentDidMount() {
     const { offset } = this.state;
-    this.props.fetch_products_laptop(offset)
+    this.props.fetch_products_laptop(offset);
   }
-  
 
   render() {
     const { products } = this.props;
@@ -26,7 +25,7 @@ class LaptopArea extends Component {
             <div className="col-lg-12">
               <div className="li-section-title">
                 <h2>
-                  <span>Laptop</span>
+                  <span>OFFICE</span>
                 </h2>
                 <ul className="li-sub-category-list">
                   {/* <li className="active"><a href="/">Prime Video</a></li>
@@ -35,35 +34,37 @@ class LaptopArea extends Component {
                 </ul>
               </div>
               <div className="row">
-                {
-                  (products && products.length) ? products.map((product, index) => {
+                {products && products.length
+                  ? products.map((product, index) => {
                       return (
-                        <LaptopItems key={index} product={product} ></LaptopItems>
-                      )
-                    }                 
-                  ) : null
-                }
+                        <LaptopItems
+                          key={index}
+                          product={product}
+                        ></LaptopItems>
+                      );
+                    })
+                  : null}
               </div>
             </div>
           </div>
         </div>
       </section>
-    )
+    );
   }
 }
 
 const mapStateToProps = (state) => {
   return {
-    products: state.productsLaptop
-  }
-}
+    products: state.productsLaptop,
+  };
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
     fetch_products_laptop: (offset) => {
-      dispatch(actFetchProductsLaptopRequest(offset))
-    }
-  }
-}
+      dispatch(actFetchProductsLaptopRequest(offset));
+    },
+  };
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(LaptopArea)
+export default connect(mapStateToProps, mapDispatchToProps)(LaptopArea);

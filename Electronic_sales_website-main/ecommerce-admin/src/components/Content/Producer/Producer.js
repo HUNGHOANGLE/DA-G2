@@ -171,7 +171,7 @@ class Producer extends Component {
                                 <td style={{ textAlign: "center" }}>
                                   <div>
                                     <span title='Edit' className="fix-action"><Link to={`producers/edit/${item.id}`}> <i className="fa fa-edit"></i></Link></span>
-                                    <span title='Delete' onClick={() => this.handleRemove(item.id)} className="fix-action"><Link to="#"> <i className="fa fa-trash" style={{ color: '#ff00008f' }}></i></Link></span>
+                                    <span title='Delete' onClick={() => this .handleRemove(item.id)} className="fix-action"><Link to="#"> <i className="fa fa-trash" style={{ color: '#ff00008f' }}></i></Link></span>
                                   </div>
                                 </td>
                               </tr>
